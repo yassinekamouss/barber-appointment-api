@@ -20,7 +20,7 @@ exports.register = async (req, res, next) => {
       email: user.email,
       role: user.role,
       phone: user.phone,  
-      token: generateToken(user._id)
+      token: generateToken(user._id, user.name)
     });
   } catch (err) {
     next(err);

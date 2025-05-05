@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const appointmentSchema = new mongoose.Schema({
     clientId:{
-        type: Schema.types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'User',
         required: true,
     },
